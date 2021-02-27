@@ -1,0 +1,33 @@
+/* // exp-bar */
+.expBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.expBar span {
+  font-size: 1rem;
+}
+
+.expBar > div {
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: rgb(196, 196, 196);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.expBar > div > div {
+  background: rgb(161,4,63);
+  background: linear-gradient(90deg, rgba(161,4,63,1) 0%, rgb(255, 56, 156) 52%, rgba(234,0,84,1) 100%);
+  border-radius: 4px;
+  height: 4px;
+}
+
+span.currentBar {
+  position: absolute;
+  top: 12px;
+  transform: translateX(-50%);
+}
