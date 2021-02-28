@@ -1,6 +1,13 @@
 import styles from '../styles/components/Experience.module.css';
+import { useContext } from 'react';
+import { ChallengeContext } from '../contexts/ChallengeContext';
 
 const Experience = () => {
+  const {currentExp, expToNextLevel} = useContext(ChallengeContext);
+
+  const percentNexRtLebel = 
+
+
   return (
     <header className={styles.expBar}>
       <span>0 xp</span>

@@ -1,6 +1,5 @@
 import React from 'react'
 import CompleteChallenges from '../components/CompleteChallenges';
-import { Countdown } from '../components/CountDown';
 import Experience from '../components/Experience';
 import Profile from '../components/Profile';
 import CountDown from '../components/CountDown';
@@ -8,6 +7,7 @@ import CountDown from '../components/CountDown';
 import styles from '../styles/pages/Home.module.css'
 
 import Head from 'next/head';
+import ChallengeBox from './../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -22,9 +22,10 @@ export default function Home() {
         <div>
           <Profile />
           <CompleteChallenges />
+          <CountDown />
         </div>
         <div>
-          <CountDown />
+          <ChallengeBox />
         </div>
       </section>
     </div>
