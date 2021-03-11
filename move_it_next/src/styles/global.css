@@ -6,15 +6,14 @@
 
 :root {
   --white: #fff;
-  --background: #f2f3f5;
-  --gray-line: #DCDDE0;
+  --background: #94BBE9;
+  --gray-line: #BCBCBC;
   --text: #666666;
   --title: #2E384D;
   --red: #E83f5b;
   --green: #4CD62B;
-  --cherry: #EA0054;
-  --cherry-dark: #B6044F;
-  --blue-twitter: #2aa9e0;
+  --blue: #4C73FF;
+  --blue-dark: #3358DC;
 }
 
 @media(max-width: 720px) {
@@ -22,13 +21,12 @@
     font-size: 87.5%;
   }
   button {
-    color: red;
     height: 55px;
   }
 }
 
-body {
-  background-color: #f2f3f5;
+body {  
+  background-color: #94BBE9;
   color: #666;
 }
 

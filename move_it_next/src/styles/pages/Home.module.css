@@ -1,19 +1,46 @@
 
 .container {
   height: 100vh;
-  max-width: 992px;
+  min-width: 992px;
   margin: 0 auto;
-  padding: 2.5rem 2rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container  section{
+  display: flex;
+  grid-template-columns: 246px 1fr;
+  gap: 1rem;
+  align-content: center;
+}
+
+.appContainer {
+  background-color: #94BBE9;
+}
+
+.profileBox {
+  width: 246px;
+  background-color: #ebebeb7b;
+  border-radius: 10px;
+}
+
+.statusBox {
+  /* width: 600; */
+  width: 700px;
+  background-color: #ebebeb7b;
+  border-radius: 10px;
+  
   display: flex;
   flex-direction: column;
 }
 
-.container  section{
+.statusBox main {
   flex: 1;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6.25rem;
-  align-content: center;
+  margin: 12px 0;
 }

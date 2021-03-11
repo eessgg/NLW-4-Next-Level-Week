@@ -1,9 +1,19 @@
+
+.expBarContainer header {
+  background-color: #ebebeb7b;
+  width: 100%;
+  padding: 12px;
+  
+  border-radius: 10px 10px 0 0;
+}
+
 /* // exp-bar */
 .expBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding: 10px;
+  margin-bottom: 30px;
 }
 
 .expBar span {
@@ -14,14 +24,13 @@
   flex: 1;
   height: 4px;
   border-radius: 4px;
-  background: rgb(196, 196, 196);
+  background: rgb(147, 147, 147);
   margin: 0 1.5rem;
   position: relative;
 }
 
 .expBar > div > div {
-  background: rgb(161,4,63);
-  background: linear-gradient(90deg, rgba(161,4,63,1) 0%, rgb(255, 56, 156) 52%, rgba(234,0,84,1) 100%);
+  background: #4C73FF;
   border-radius: 4px;
   height: 4px;
 }

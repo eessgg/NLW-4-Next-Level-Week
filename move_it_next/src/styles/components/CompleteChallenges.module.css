@@ -2,16 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
 
-  margin: 3.5rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #d7d8d2;
+  margin: 0.5rem 0;
+  padding: 18px 12px;
+  border-bottom: 1px solid #d2d8d3;
 
   font-weight: 500;
 }
 
 .completeChallengesContainer span:first-child {
-  font-size: 1.25rem;
+  font-size: 1.20rem;
+  padding: 16px 0;
 }
 
 .completeChallengesContainer span:last-child {

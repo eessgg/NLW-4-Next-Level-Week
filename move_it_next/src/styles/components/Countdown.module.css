@@ -1,13 +1,67 @@
 .countdownContainer {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   font-family: Rajdhani;
   font-weight: 600;
   color: var(--title);
 }
 
+.countdownContainer .countdownClock {
+  display: flex;
+  align-items: center;  
+}
 
-.countdownContainer > div {
+.countdownContainer .countdownClock span {
+  font-size: 6.25rem;
+}
+
+.startCountdownButton {
+  /* height: 5rem; */
+
+  margin-top: 2rem;
+  padding: 16px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 0;
+  border-radius: 50px;
+
+  background: var(--blue);
+  color: var(--white);
+
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  transition: background-color 0.2s;
+}
+
+.startCountdownButton:hover {
+  background: var(--blue-dark) ;
+} 
+
+.startCountdownButtonActive {
+  background: var(--white);
+  color: var(--title);
+}
+.startCountdownButtonActive:not(:disabled):hover {
+  background: var(--cherry-dark);
+}
+.startCountdownButtonActive:hover {
+  background: var(--cherry);
+  color: var(--white);
+}
+
+.startCountdownButton:disabled {
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
+}
+
+/* .countdownContainer > div {
   flex: 1;
   display: flex;
   align-items: center;
@@ -79,4 +133,4 @@
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
-}
+} */

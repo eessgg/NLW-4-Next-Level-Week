@@ -6,12 +6,12 @@ import Experience from '../components/Experience';
 import Profile from '../components/Profile';
 import CountDown from '../components/CountDown';
 
-import styles from '../styles/pages/Home.module.css'
-
 import Head from 'next/head';
 import ChallengeBox from './../components/ChallengeBox';
 import { CountdownProvider } from '../contexts/CountDownContext';
 import { ChallengeProvider } from '../contexts/ChallengeContext'
+
+import styles from '../styles/pages/Home.module.css'
 
 interface HomeProps {
   level: number;
@@ -29,17 +29,18 @@ export default function Home(props) {
           <title> Inicio | move.city </title>
         </Head>
         
-        <Experience />
-
         <CountdownProvider>
-          <section>
-            <div>
+          <section className={styles.appContainer}>
+            <div className={styles.profileBox}>
               <Profile />
               <CompleteChallenges />
-              <CountDown />
             </div>
-            <div>
-              <ChallengeBox />
+            <div className={styles.statusBox}>
+              <Experience />
+              <main>
+                <CountDown />
+                <ChallengeBox />
+              </main>
             </div>
           </section>
         </CountdownProvider>
